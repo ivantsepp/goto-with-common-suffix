@@ -24,3 +24,5 @@ You can also set your custom key binding to invoke the command. Here's my user s
 ]
 
 ```
+
+![screencast](https://user-images.githubusercontent.com/4662860/28236073-40d7ae98-68ea-11e7-8f13-d7706ccbdee0.gif)

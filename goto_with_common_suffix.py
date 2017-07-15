@@ -18,8 +18,8 @@ class GotoWithCommonSuffixCommand(sublime_plugin.WindowCommand):
             prefix_path = path
             folders = text.split(os.sep)
             while len(folders) > 0:
+                matched = False
                 for directory in os.listdir(path):
-                    matched = False
                     if os.path.isdir(os.path.join(path, directory)) and folders[0] == directory:
                         path = path + os.sep + folders[0]
                         folders = folders[1:]
