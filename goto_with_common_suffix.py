@@ -26,6 +26,10 @@ class GotoWithCommonSuffixCommand(sublime_plugin.WindowCommand):
                         matched = True
                         break
                 folders = folders[1:] if not matched else folders
+
+            if os.path.exists(os.path.join(prefix_path, basename)):
+                path = os.path.join(prefix_path, basename)
+
             if path != '' and path != prefix_path:
                 matched_file = os.path.exists(path + os.sep + basename)
                 path = path.replace(prefix_path, '')

@@ -15,3 +15,12 @@ Usage
 --------
 
 There is now a method named `goto_with_common_suffix` and command name `Goto With common suffix` that invokes it. You can use this plugin by opening the [Command Palette](http://docs.sublimetext.info/en/latest/extensibility/command_palette.html) and selecting this command.
+
+You can also set your custom key binding to invoke the command. Here's my user sublime key map file:
+
+```json
+[
+    { "keys": ["ctrl+p"], "command": "goto_with_common_suffix"}
+]
+
+```
