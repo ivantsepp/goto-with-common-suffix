@@ -27,7 +27,7 @@ class GotoWithCommonSuffixCommand(sublime_plugin.WindowCommand):
             line_number = matches.group('line_number')
             basename = matches.group('basename')
 
-        folders = list(filter(None, text.split(os.sep)))
+        folders = list(filter(None, re.split(r"[\\/]", text)))
 
         # Loop through each opened directory in the sublime window and open first match
         for path in self.window.folders():
